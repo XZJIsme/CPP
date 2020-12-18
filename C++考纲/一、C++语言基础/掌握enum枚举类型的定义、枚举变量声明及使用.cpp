@@ -2,8 +2,7 @@
 using namespace std;
 int main()
 {
-
-	enum enumType
+    enum enumType
     { // 第一：声明 enumType 为新的数据类型，称为枚举(enumeration);
         Monday,
         Tuesday,
@@ -13,12 +12,43 @@ int main()
         Saturday,
         Sunday
     }; // 声明 Monday、Tuesday 等为符号常量，通常称之为枚举量，其值默认分别为 0-6
-    /*
+       /*
     不能将非枚举量赋给枚举变量，那么能不能将枚举量赋给非枚举变量呢？
     如：int a=Monday; 这是允许的，因为枚举量是符号常量，
     这里的赋值编译器会自动把枚举量转换为int类型。
+    对于枚举，只定义了赋值运算符，没有为枚举定义算术运算。
+    不过，枚举量能参与其他类型变量的运算。
     */
-    sd
+    enumType Weekday = Tuesday;
+    enumType Weekday2 = enumType(3);
+    // cout << Weekday2 << endl;
+    enumType Weekday3 = (enumType)3;
+    // cout << Weekday3 << endl;
+    Weekday = enumType(123.93); // 结果将是不确定的，这么做不会出错
+    // cout << Weekday << endl; // 不过我试验了几下，好像没什么问题，会输出相应的数字
+
+    enum enumType_with_自定义枚举量的值
+    {
+        A_enum = 1,
+        B_enum, // default 2
+        C_enum = 10,
+        D_enum // default 11
+    };
+    cout << D_enum << endl;
+    auto test = B_enum;
+    cout << test << endl;
+    enumType_with_自定义枚举量的值 test_强制赋值范围 = enumType_with_自定义枚举量的值(100);
+    cout << test_强制赋值范围 << endl; // Whatever，反正说是非法的
+    // 枚举的上限是 大于最大枚举量的 最小的 2 的幂，减去 1；
+
+    // 也有这种用法，不指定名字
+    enum
+    {
+        one,
+        two,
+        three
+    };
+    // 相当于 static const int one = 0;
     return 0;
 }
 
