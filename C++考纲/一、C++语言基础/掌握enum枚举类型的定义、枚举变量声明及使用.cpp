@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-    enum enumType
+
+	enum enumType
     { // 第一：声明 enumType 为新的数据类型，称为枚举(enumeration);
         Monday,
         Tuesday,
@@ -17,7 +18,7 @@ int main()
     如：int a=Monday; 这是允许的，因为枚举量是符号常量，
     这里的赋值编译器会自动把枚举量转换为int类型。
     */
-
+    sd
     return 0;
 }
 
