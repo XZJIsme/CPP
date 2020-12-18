@@ -49,6 +49,18 @@ int main()
         three
     };
     // 相当于 static const int one = 0;
+
+    // enum Side
+    // {
+    //     Right,
+    //     Left
+    // };
+    // enum Thing
+    // {
+    //     Wrong,
+    //     Right
+    // }; // 这样就不行
+
     return 0;
 }
 
@@ -60,3 +72,17 @@ int main()
  * 而使用 enum 工具不仅能够创建符号常量，还能定义新的数据类型
  * 但是必须按照一定的规则进行
 */
+
+// C++11
+// 强类型枚举使用enum class语法来声明
+// enum class Enumeration
+// {
+//     VAL1,
+//     VAL2,
+//     VAL3 = 100,
+//     VAL4
+// };
+// 
+// 另外枚举类型所使用的类型默认为int类型，也可指定其他类型：
+// enum class Enum:unsigned int{VAL1,VAL2};
+// 
