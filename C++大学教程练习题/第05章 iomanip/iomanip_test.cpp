@@ -8,7 +8,7 @@ int main()
     cout << setbase(16) << b << ' ' << b << endl;
     // setbase()非一次性，往后都有效
     cout << setw(30) << b;
-    // 宽度设置setw()是一次性的
+    // 宽度设置setw()是一次性的 
     cout << b << endl;
     cout << skipws << ' ' << b;
     cout << "这里设置了一次fixed，cout完fixed就换行了" << fixed << endl;
