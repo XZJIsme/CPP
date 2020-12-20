@@ -4,6 +4,6 @@ int main()
 {
     wchar_t a[]=L"ºÃÏñÃ»ÂÑÓÃ"; 
     putwchar(a[0]);
-    puts("return 0;");
+    puts("return 0;"); 
     return 0;
 }
