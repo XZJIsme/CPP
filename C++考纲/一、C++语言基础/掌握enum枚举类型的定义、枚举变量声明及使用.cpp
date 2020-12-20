@@ -60,7 +60,7 @@ int main()
     // {
     //     Wrong,
     //     Right
-    // }; // 这样就不行
+    // }; // 这样就不行，因为Right这个名字冲突了，使用C++的enum class才行：enum class e1{A};  e1::A;
     cout << "one + ten = " << one + ten << endl;
 
     enumType_with_自定义枚举量的值 test66 = A_enum + D_enum; // 报错，无法从“int”转换为“main::enumType_with_自定义枚举量的值
