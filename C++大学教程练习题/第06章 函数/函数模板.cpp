@@ -18,7 +18,7 @@ auto max2(T x, T y) -> T
 {
     if (x > y)
         return x;
-    else
+    else 
         return y;
 }
 
