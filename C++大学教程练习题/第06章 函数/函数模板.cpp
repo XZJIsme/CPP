@@ -12,6 +12,16 @@ T maximum(T v1, T v2, T v3)
     return v3;
 }
 
+// C++ 11
+template <typename T>
+auto max2(T x, T y) -> T
+{
+    if (x > y)
+        return x;
+    else
+        return y;
+}
+
 int main()
 {
     cout << maximum(1, 2, 3) << endl;
