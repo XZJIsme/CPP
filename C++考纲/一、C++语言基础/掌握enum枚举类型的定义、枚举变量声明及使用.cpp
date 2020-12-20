@@ -44,9 +44,10 @@ int main()
     // 也有这种用法，不指定名字
     enum
     {
-        one,
+        one = 1,
         two,
-        three
+        three,
+        ten = 10
     };
     // 相当于 static const int one = 0;
 
@@ -60,7 +61,7 @@ int main()
     //     Wrong,
     //     Right
     // }; // 这样就不行
-
+    cout << "one + ten = " << one + ten << endl;
     return 0;
 }
 
