@@ -6,7 +6,7 @@ int main()
     int b = 123;
     cout << setfill('#');
     cout << setbase(16) << b << ' ' << b << endl;
-    // setbase()非一次性，往后都有效
+    // setbase()非一次性，往后都有效 
     cout << setw(30) << b;
     // 宽度设置setw()是一次性的 
     cout << b << endl;
