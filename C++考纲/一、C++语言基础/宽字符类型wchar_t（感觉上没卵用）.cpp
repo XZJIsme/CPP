@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
+ï»¿#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    wchar_t a[]=L"ºÃÏñÃ»ÂÑÓÃ"; 
+    wchar_t a[]=L"å¥½åƒæ²¡åµç”¨"; 
     putwchar(a[0]);
     puts("return 0;"); 
     return 0;
