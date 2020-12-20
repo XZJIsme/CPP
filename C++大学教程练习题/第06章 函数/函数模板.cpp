@@ -22,6 +22,9 @@ auto max2(T x, T y) -> T
         return y;
 }
 
+template <typename T>
+auto max3(T x, T y) -> T ;
+
 int main()
 {
     cout << maximum(1, 2, 3) << endl;
