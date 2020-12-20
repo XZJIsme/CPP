@@ -62,6 +62,8 @@ int main()
     //     Right
     // }; // 这样就不行
     cout << "one + ten = " << one + ten << endl;
+
+    enumType_with_自定义枚举量的值 test66 = A_enum + D_enum; // 报错，无法从“int”转换为“main::enumType_with_自定义枚举量的值
     return 0;
 }
 
